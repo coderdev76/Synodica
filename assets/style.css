@@ -12,6 +12,7 @@
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 body {
   font-family: var(--heading-font-family);
@@ -19,7 +20,7 @@ body {
   font-size: 1.8rem;
   line-height: 25px;
   letter-spacing: 0;
-
+  overflow-x: hidden;
 }
 .container {
   width: 100%;
@@ -233,13 +234,6 @@ img {
   font-size: 12px;
   opacity: 1;
 }
-
-
-
-
-
-
-
 .hero .hero-content .hero-location .btn {
   border-radius: 50px;
   box-shadow: 2px 4px 12px 0px #00000026;
@@ -250,16 +244,50 @@ img {
   color: var(--white-color);
   border-color: var(--black-color);
 }
-
-
-
-
-
-
-
-
-
 .hero .hero-image img {
   border-radius: 20px;
 }
+
+/* Trust Partner CSS Start */
+.trust-partner {
+  padding-top: 3rem;
+}
+.trust-partner .section-heading.gradient-heading {
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 80px;
+  letter-spacing: -2px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  background: linear-gradient(180deg, #4154F1 18.57%, rgba(65, 84, 241, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.trust-partner .partner-swiper {
+  position: relative;
+}
+.trust-partner .partner-swiper::before,
+.trust-partner .partner-swiper::after {
+  position: absolute;
+  content: "";
+  width: 122px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 86.06%);
+}
+.trust-partner .partner-swiper::after {
+  left: auto;
+  right: 0;
+  transform: scaleX(-1);
+}
+.trust-partner .partner-swiper .swiper-slide {
+  width: auto;
+}
+/* Trust Partner CSS End */
+
 /* Home CSS End */
