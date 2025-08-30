@@ -4,13 +4,86 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Synodica</title>
+
+   <!-- CSS Link -->
+   <link rel="stylesheet" href="assets/style.css" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-<h1>Synodica</h1>
-<h4>Netlify Demo Content</h4>
-<p>What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="site-branding">
+      <img src="assets/images/syanodica-logo.svg" alt="Synodica">
+    </a>
+    <nav class="site-navigation">
+      <ul>
+        <li><a href="#">Company</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Odoo Apps</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </nav>
+    <div class="header-action">
+      <a href="#" class="btn button-primary-outline">
+        Contact us
+        <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.26387 0.8125H8.99988M8.99988 0.8125V6.54856M8.99988 0.8125L1.625 8.18741" stroke="currentcolor" stroke-width="1.30371" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>          
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="odoo-badge">
+        <img src="assets/images/odoo_silver_partner.svg" alt="Odoo Silver Partner Badge">
+      </div>
+      <h1 class="hero-title main-heading">360° Odoo ERP Solutions to Grow Your Business</h1>
+      <p class="hero-copy">We are certified Odoo consultants and developers with 10+ years of expertise. Delivering tailored ERP implementations, custom modules, seamless integrations, and ongoing support to streamline your operations and fuel growth.</p>
+      <div class="hero-location">
+        <div class="location-block">
+          <div class="block-wrapper location">
+            <div class="icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.4277 21.9293 12.2168 21.9998 12 21.9998C11.7832 21.9998 11.5723 21.9293 11.399 21.799C9.539 20.193 4 14.993 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10Z" stroke="black" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="black" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                
+            </div>
+            <div class="field-wrapper">
+              <h6 class="h6">Location</h6>
+              <input class="hero-location-field" name="user_location" type="text" placeholder="Seach for location">
+            </div>
+          </div>
+          <div class="block-wrapper business">
+            <div class="icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 12H12.01" stroke="black" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 6V4C16 3.46957 15.7893 2.96086 15.4142 2.58579C15.0391 2.21071 14.5304 2 14 2H10C9.46957 2 8.96086 2.21071 8.58579 2.58579C8.21071 2.96086 8 3.46957 8 4V6" stroke="black" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 13C19.0328 14.959 15.5555 16.0033 12 16.0033C8.44445 16.0033 4.96721 14.959 2 13" stroke="black" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20 6H4C2.89543 6 2 6.89543 2 8V18C2 19.1046 2.89543 20 4 20H20C21.1046 20 22 19.1046 22 18V8C22 6.89543 21.1046 6 20 6Z" stroke="black" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                
+            </div>
+            <div class="field-wrapper">
+              <h6 class="h6">Business Type</h6>
+              <input class="hero-location-field" name="user_business_type" type="text" placeholder="Select Business Type">
+            </div>
+          </div>
+        </div>
+        <button class="btn button-white">Request Demo</button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="assets/images/HERO-OBJECTS.png" alt="Hero Dashboard">
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
